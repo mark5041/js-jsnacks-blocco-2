@@ -23,7 +23,11 @@ function sommaNumeri(number)
     let somma = 0;
     do
     {
-        somma += number[i];
+        if(i % 2 != 0)
+        {
+            somma += number[i];
+            console.log(number[i]);
+        }
         i++;
     }
     while(i < number.length)
